@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#31315C">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#DADADA"
+        android:fontFamily="@font/manrope_bold"
+        android:layout_marginLeft="20dp"
+        android:text="To-Do List"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add"
+    android:textColor="#ffffff"
+    android:background="@drawable/circle_add_button"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp"
+    android:id="@+id/add"
+    />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/add"
+    android:layout_marginTop="20dp"
+    android:id="@+id/recyclerview"
+    />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
+    />
+
+</RelativeLayout>
